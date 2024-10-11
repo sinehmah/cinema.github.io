@@ -1,0 +1,106 @@
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #ebebeb;
+    margin-top: 0.6%;
+    margin-left: 1%;
+}
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #afafaf;
+    margin-top: 0.6%;
+    margin-left: 1%;
+}
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #afafaf;
+    margin-top: 0.6%;
+    margin-left: 1%;
+    width: 90%;
+}
+nav {
+    background-color: #1C1C1C;
+    border-radius: 4px;
+    opacity: 0.9;
+    height: 8%;
+    width: 98%;
+    position: fixed;
+    left: auto;
+    right: auto;
+}
+body {
+    background-image: linear-gradient(-45deg,#2e2e2e 50%, #242424 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.buffer {
+    height: 200px;
+}
+.container {
+    width: 100%; background-color: #1C1C1C;
+    height: 3000px;
+}
+.infocontainer {
+    width: 100%; background-color: #1C1C1C;
+    height: 500px;
+}
+.moviecover {
+    height: 10.5%;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+    transition: outline 0.1s, box-shadow 0.3s;
+}
+.moviecover:hover {
+    cursor: pointer;
+    outline: 1px solid white;
+    box-shadow: 0 5px 10px black;
+}
+.infocover {
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+    transition: outline 0.1s, box-shadow 0.3s;
+}
+.playbutton {
+    height: 10%;
+    width: 130px;
+    background-color: #ff6a25;
+    border-radius: 5px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 170%;
+    margin-left: 2%;
+}
+.playbutton:hover {
+    cursor: pointer;
+}
+.backbtn:hover {
+    cursor: pointer;
+}
+video {
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .moviecover {
+        height: 9%;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+    transition: outline 0.1s, box-shadow 0.3s;
+    }
+    nav {
+        background-color: #1C1C1C;
+        border-radius: 4px;
+        opacity: 0.9;
+        height: 8%;
+        width: 96%;
+        position: fixed;
+        left: auto;
+        right: auto;
+    }
+}
