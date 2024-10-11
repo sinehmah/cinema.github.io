@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="moviecatalog" style="display: block;">
+        <nav>
+            <h1>Free movies</h1>
+        </nav>
+        <div class="buffer"></div>
+        <div style="text-align: center;">
+            <h1>Unlimited streaming, no sign up required.</h1>
+        </div>
+        <div class="buffer"></div>
+        <div class="container">
+            <img id="deadpool3" class="moviecover" src="images/DEADPOOLANDWOVERINE_cover.jpg" onclick="movieinfopage(this.id)">
+            <img id="despicableme4" class="moviecover" src="images/DESPICABLEME4_cover.jpg" onclick="movieinfopage(this.id)">
+            <img id="downfall" class="moviecover" src="images/DOWNFALL_cover.jpg" onclick="movieinfopage(this.id)">
+            <img id="logan" class="moviecover" src="images/LOGAN_cover.jpg" onclick="movieinfopage(this.id)">
+            <img id="oppenheimer" class="moviecover" src="images/OPPENHEIMER_cover.jpg" onclick="movieinfopage(this.id)">
+        </div>
+    </div>
+    <div id="movieinfo" style="display: none;">
+        <nav>
+            <h1 class="backbtn" onclick="goback()">Return</h1>
+        </nav>
+        <div class="buffer" style="height: 90px;"></div>
+        <div class="infocontainer">
+            <div style="height: 50%; width: 100%; background-color: #181818;">
+                <div style="height: 100%; display: flex; width: 80%;">
+                    <img id="infocoverimg" class="infocover" src="">
+                    <h1 id="infotitle" style="font-weight: 400;">No title available.</h1>
+                    <h2 id="moviereleasedate">....</h2>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <input id="playmovie" class="playbutton" type="button" value="▶" onclick="beginmovie()">
+                <h2 id="inforating">Rating not available.</h2>
+                </div>
+            <p id="infodesc">No description available.</p>
+        </div>
+    </div>
+    <div id="moviepage" style="display: none;">
+        <nav>
+            <h1 class="backbtn" onclick="goback2movie()">Return</h1>
+        </nav>
+        <div class="buffer" style="height: 90px;"></div>
+        <video id="movieplayer" src="" type="video/mp4" controls autoplay>
+        </video>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
